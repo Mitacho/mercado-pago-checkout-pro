@@ -62,10 +62,8 @@ export default function ProductCheckout({
       <div className={styles.container}>
         <div>
           <picture>
-            <Image
+            <img
               className={styles.picture}
-              height={720}
-              width={720}
               src={item.pictureUrl}
               alt={item.title}
             />
