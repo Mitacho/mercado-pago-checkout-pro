@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         },
       });
     }
-  }, [data]);
+  }, [data, getPreference]);
 
   return (
     <div>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                 </a>
               </Link>
               <p className="text-secondary-color mt-200">
-                Don't worry… it is a fake login ;)
+                Don&apos;t worry… it is a fake login ;)
               </p>
             </>
           ) : null}

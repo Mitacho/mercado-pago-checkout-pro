@@ -21,11 +21,11 @@ export default function Navbar(): JSX.Element {
   const handleLogout = useCallback(async () => {
     await logout();
     router.reload();
-  }, []);
+  }, [router, logout]);
 
   useEffect(() => {
     refetch();
-  }, []);
+  }, [refetch]);
 
   return (
     <nav aria-label="main navbar" className={styles.navbar}>
