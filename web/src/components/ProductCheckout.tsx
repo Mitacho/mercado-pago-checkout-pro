@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Script from "next/script";
 
 import { ProductQuery } from "generated/graphql";

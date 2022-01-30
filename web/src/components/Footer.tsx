@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import styles from "../styles/components/Footer.module.css";
 
@@ -15,7 +15,7 @@ export default function Footer(): JSX.Element {
       >
         GitHub{" "}
         <span className={styles.logo}>
-          <Image
+          <img
             src="/github-light.png"
             alt="Vercel Logo"
             width={32}
