@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  gap: 1rem;
+}
+
+.picture {
+  background-color: var(--bg-primary-color);
+  border-radius: var(--border-radius-m);
+}
+
+.price {
+  color: var(--blue-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

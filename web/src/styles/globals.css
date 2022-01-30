@@ -1,0 +1,74 @@
+@import url("./size.css");
+@import url("./text.css");
+@import url("./spacing.css");
+@import url("./spinner.css");
+@import url("./components/Button.css");
+@import url("./components/Input.css");
+
+:root {
+  --black-color: #171717;
+  --bg-primary-color: #202124;
+  --bg-secondary-color: #303134;
+  --text-primary-color: #e8eaed;
+  --text-secondary-color: #bdc1c6;
+  --gray-primary-color: #949494;
+  --gray-secondary-color: #5f6368;
+  --blue-color: #8ab4f8;
+  --red-color: #d17777;
+  --border-radius-s: 0.25rem;
+  --border-radius-m: 0.5rem;
+  --box-shadow: 0 1px 6px 0 var(--black-color);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--bg-primary-color);
+  color: var(--text-secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.325rem;
+}
+
+fieldset {
+  outline: none;
+  border: none;
+}
+
+.form-helper-text {
+  hyphens: auto;
+  display: block;
+  margin-top: 0.325rem;
+  color: var(--gray-secondary-color);
+}
+
+.text-secondary-color {
+  color: var(--text-secondary-color);
+}

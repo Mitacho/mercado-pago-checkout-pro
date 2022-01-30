@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  max-width: 20rem;
+  margin: 0.5rem 0;
+}
+
+.container input {
+  width: 100%;
+}
+
+.error {
+  hyphens: auto;
+  margin-top: 0.25rem;
+  display: block;
+  color: var(--red-color);
+}

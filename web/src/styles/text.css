@@ -1,0 +1,7 @@
+.break-word {
+  word-wrap: break-word;
+}
+
+.c-blue {
+  color: var(--blue-color);
+}

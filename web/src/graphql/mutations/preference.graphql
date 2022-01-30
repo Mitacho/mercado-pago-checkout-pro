@@ -1,0 +1,13 @@
+mutation Preference($options: PreferenceInput!) {
+  preference(options: $options) {
+    errors {
+      field
+      message
+    }
+    success
+    mp {
+      id
+      init_point
+    }
+  }
+}

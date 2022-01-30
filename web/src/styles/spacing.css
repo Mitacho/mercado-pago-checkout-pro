@@ -1,0 +1,31 @@
+.mt-100 {
+  margin-top: 1rem;
+}
+
+.mt-200 {
+  margin-top: 2rem;
+}
+
+.mb-100 {
+  margin-bottom: 1rem;
+}
+
+.mb-200 {
+  margin-bottom: 2rem;
+}
+
+.ml-100 {
+  margin-left: 1rem;
+}
+
+.ml-200 {
+  margin-left: 2rem;
+}
+
+.mr-100 {
+  margin-right: 1rem;
+}
+
+.mr-200 {
+  margin-right: 2rem;
+}
