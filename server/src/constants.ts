@@ -3,7 +3,6 @@ export const {
   CORS_ORIGIN_URL,
   ACCESS_TOKEN,
   MP_EXTERNAL_REFERENCE_EMAIL,
-  PORT,
 } = process.env;
 export const PROD = process.env.NODE_ENV === "production";
 export const COOKIE_NAME = "qid";

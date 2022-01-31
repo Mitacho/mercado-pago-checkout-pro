@@ -19,7 +19,6 @@ import {
   ACCESS_TOKEN,
   COOKIE_NAME,
   CORS_ORIGIN_URL,
-  PORT,
   PROD,
   SESSION_SECRET,
   SESSION_TTL,
@@ -76,6 +75,6 @@ function fastifyAppClosePlugin(app: FastifyInstance): ApolloServerPlugin {
       maxAge: SESSION_TTL,
     },
   });
-  const serverUrl = await app.listen(PORT || 4000);
+  const serverUrl = await app.listen(process.env.PORT || 4000);
   console.log(`Server ready at port ${serverUrl}${server.graphqlPath}`);
 })().catch((error) => console.error(error));
