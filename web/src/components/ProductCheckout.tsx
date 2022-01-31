@@ -29,12 +29,9 @@ export default function ProductCheckout({
   }
 
   function loadMercadoPago() {
-    const mp = new window.MercadoPago(
-      "TEST-156564c7-67ce-4bf4-b4c6-841a66743453",
-      {
-        locale: "pt-BR",
-      }
-    );
+    const mp = new window.MercadoPago(process.env.NEXT_PUBLIC_PUBLIC_KEY, {
+      locale: "pt-BR",
+    });
 
     // Inicialize o checkout
     mp.checkout({
