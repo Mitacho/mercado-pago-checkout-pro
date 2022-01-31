@@ -82,8 +82,9 @@ export default function ProductCheckout({
         <div>
           <h2>{item.title}</h2>
         </div>
-        <div>
+        <div className={styles.total}>
           <h3>{format(item.unitPrice)}</h3>
+          <span>Quantity: {quantity}</span>
         </div>
         <div>
           <p>{item.description}</p>
