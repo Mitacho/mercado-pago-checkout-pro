@@ -52,6 +52,8 @@ export default function ProductCheckout({
       <Script
         src="https://sdk.mercadopago.com/js/v2"
         strategy="lazyOnload"
+        // @ts-ignore
+        view="item"
         onLoad={() => {
           loadMercadoPago();
         }}
