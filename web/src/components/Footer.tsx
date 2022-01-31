@@ -7,11 +7,11 @@ export default function Footer(): JSX.Element {
     <footer className={styles.footer}>
       <span>Mercado Pago &lt;Dev&gt;Program January 2021</span>
       <a
-        href="https://github.com/Mitacho"
+        href="https://github.com/Mitacho/mercado-pago-checkout-pro"
         target="_blank"
         rel="noopener noreferrer"
-        title="Mitacho's GitHub profile"
-        aria-label="Link to the Mitacho's GitHub profile"
+        title="Application GitHub Repository"
+        aria-label="Link to the this application GitHub Repository"
       >
         GitHub{" "}
         <span className={styles.logo}>
