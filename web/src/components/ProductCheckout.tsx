@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 // import Image from "next/image";
 import Script from "next/script";
 
@@ -20,14 +21,12 @@ declare global {
   }
 }
 
+const mpIsLoaded = typeof window.MercadoPago !== "undefined";
+
 export default function ProductCheckout({
   item,
   preferenceId,
 }: Props): JSX.Element {
-  if (!item) {
-    return <h1>Product not found</h1>;
-  }
-
   function loadMercadoPago() {
     const mp = new window.MercadoPago(process.env.NEXT_PUBLIC_PUBLIC_KEY, {
       locale: "pt-BR",
@@ -47,17 +46,29 @@ export default function ProductCheckout({
 
   const quantity = 1;
 
+  useEffect(() => {
+    if (mpIsLoaded) {
+      loadMercadoPago();
+    }
+  }, []);
+
+  if (!item) {
+    return <h1>Product not found</h1>;
+  }
+
   return (
     <>
-      <Script
-        src="https://sdk.mercadopago.com/js/v2"
-        strategy="lazyOnload"
-        // @ts-ignore
-        view="item"
-        onLoad={() => {
-          loadMercadoPago();
-        }}
-      />
+      {!mpIsLoaded ? (
+        <Script
+          src="https://sdk.mercadopago.com/js/v2"
+          strategy="lazyOnload"
+          // @ts-ignore
+          view="item"
+          onLoad={() => {
+            loadMercadoPago();
+          }}
+        />
+      ) : null}
       <div className={styles.container}>
         <div>
           <picture>
