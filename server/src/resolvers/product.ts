@@ -14,7 +14,7 @@ import {
   Field,
 } from "type-graphql";
 import { toSnakeCaseObject } from "@utils/strings";
-import { MP_EXTERNAL_REFERENCE_EMAIL } from "@constants";
+import { MP_EXTERNAL_REFERENCE_EMAIL, NOTIFICATION_URL } from "@constants";
 
 @ObjectType()
 class MercadoPagoPreferenceResponse {
@@ -128,7 +128,7 @@ export class ProductResolver {
         ],
         installments: 6,
       },
-      notification_url: "https://www.your-site.com/ipn",
+      notification_url: NOTIFICATION_URL,
     };
 
     console.log(payer);
